@@ -1,0 +1,18 @@
+﻿@using NightClub.Models
+@{
+    ViewData["Title"] = "Sales";
+}
+
+@{Product product = new Product(); 
+}
+
+<h4>Sale Create</h4>
+<div>
+    <form class="form-group">
+        <h4>Code:</h4><input class="col-form-label" value="@product.Code" />
+        <h4>Name Product:</h4><input value="@product.Name" />
+        <h4>Due Date:</h4><input value="@product.DueDate" />
+        <h4>Price:</h4><input value="@product.Price" /><br />
+        <input type="submit" value="Submit">
+    </form>
+</div>
